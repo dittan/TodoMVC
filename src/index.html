@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TodoMVC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>todos</h1>
+            <form id="form">
+                <input type="text" id="user-input" placeholder="What needs to be done?" autocomplete="off">
+            </form>
+            <span id="toggle-all" class="display-none">❯</span>
+        </header>
+
+        <ul id="item-list">
+            <!-- Här läggs våra todo-items -->
+        </ul>
+
+        <footer class="display-none">
+            <ul>
+                <li>
+                    <a id="item-counter"></a>
+                </li>
+                <li>
+                    <a id="all" class="mode selected" href="#">All</a>
+                </li>
+                <li>
+                    <a id="active" class="mode" href="#">Active</a>
+                </li>
+                <li>
+                    <a id="completed" class="mode" href="#">Completed</a>
+                </li>
+                <li>
+                    <a id="clear-button" class="invisible" href="#">Clear completed</a>
+                </li>
+            </ul>
+        </footer>
+
+    </div>
+</body>
+
+</html>
